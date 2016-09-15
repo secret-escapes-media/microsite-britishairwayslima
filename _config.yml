@@ -1,10 +1,11 @@
 # Site settings
-title: se-microsite-template
+title: Peru
 description: >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi veniam voluptatibus totam accusantium laborum quo dolore.
-baseurl: "/se-microsite-template" # the subpath of your site, e.g. /blog/
-url: "https://www.secretescapes.com" # the base hostname & protocol for your site
+  From the remnants of ancient civilisations to Indiana Jones-style exploits in the rainforest, Peru catapults visitors into the spirit of adventure.
+baseurl: "/britishairwayslima" # the subpath of your site, e.g. /blog/
+url: "http://m-stg.secretescapes.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
 exclude: [node_modules, gulpfile.js, package.json, bower_components, bower.json, README.md]
+keep_files: [three-sixty-image]

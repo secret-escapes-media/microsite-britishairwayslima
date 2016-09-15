@@ -1,32 +1,41 @@
 <header class="site-header">
-  <div class="row row--padding">
+  <div class="row">
+    <div class="row--padding site-header__wrap">
 
-    <div class="mobile-icon mobile-icon__menu js-mobile-menu-open row--margin"></div>
-
-    <a href="https://www.secretescapes.com/"><img class="site-header__logo site-header__logo--secret-escapes js-svg-swap" src="{{ site.baseurl }}/img/logo/secret-escapes.png" alt="Secret Escapes logo"></a>
-    {% include partner-logo.html %}
-
-    <nav class="site-header__nav mobile-menu">
-      <div class="site-header__nav-item mobile-icon mobile-icon__close js-mobile-menu-close"></div>
-      <ul class="site-header__nav-list">
-        <li class="site-header__nav-item"><a class="site-header__nav-link" href="https://www.secretescapes.com/current-sales">Current Sales</a></li>
-        <li class="site-header__nav-item"><a class="site-header__nav-link" href="https://www.secretescapes.com/smartstays/filter">Smart Stays</a></li>
-        <li class="site-header__nav-item"><a class="site-header__nav-link" href="https://www.secretescapes.com/spa">Spa</a></li>
-        <li class="site-header__nav-item"><a class="site-header__nav-link" href="https://www.secretescapes.com/vouchers-offer">Gift Vouchers</a></li>
-        <li class="site-header__nav-item"><a class="site-header__nav-link site-header__nav-link--current" href="{{ site.baseurl }}">{{ site.title }}</a></li>
-      </ul>
-      <div class="mobile-menu__logo">
-        {% include partner-logo.html %}
+      <!-- NAV & SE LOGO -->
+      <div class="site-header__column site-header__column--left">
+        <a class="js-nav__icon nav__icon nav__icon--menu site-header__item site-header__item--left"></a>
+        <span class="site-header__divider"></span>
+        <a class="logo logo--secret-escapes" href="https://www.secretescapes.com/"><img class="js-svg-swap" src="{{ site.baseurl }}/img/logo/secret-escapes.png" alt="Secret Escapes logo"></a>
       </div>
-    </nav>
 
+      <!-- PARTNER LOGOS -->
+      <div class="site-header__column site-header__column--right">
+        <a class="logo logo__partner logo--british-airways" href="#"><img class="js-svg-swap" src="{{ site.baseurl }}/img/logo/british-airways.png" alt="British Airways logo"></a>{% if page.class == "overview" or page.class == "flights" or page.class == "travel-tips" %}<a class="logo logo__partner logo--gatwick-airport" href="#"><img class="js-svg-swap" src="{{ site.baseurl }}/img/logo/gatwick-airport.png" alt="Gatwick Airport logo"></a>{% endif %}
+      </div>
+
+    </div>
   </div>
 </header>
 
-<div class="row">
-  <div class="microsite-nav">
-    <ul class="microsite-nav__list">
-      {% assign nav-order = site.pages | sort:"nav-order" %}{% for page in nav-order %}{% if page.title %}<li class="microsite-nav__item microsite-nav__item--{{ page.class }}"><a class="microsite-nav__link" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>{% endif %}{% endfor %}
-    </ul>
+<!-- NAVIGATION -->
+<nav class="js-nav nav nav--is-closed">
+  <div class="site-header__offset">
+    <div class="nav__wrap">
+      <div class="row row--padding">
+        <!-- CORE NAVIGATION -->
+        <ul class="nav__core">
+           <li class="nav__core-item"><a class="nav__core-link" href="https://www.secretescapes.com/current-sales">Current Sales</a></li
+          ><li class="nav__core-item"><a class="nav__core-link" href="https://www.secretescapes.com/smartstays/filter">Smart Stays</a></li
+          ><li class="nav__core-item"><a class="nav__core-link" href="https://www.secretescapes.com/spa">Spa</a></li
+          ><li class="nav__core-item"><a class="nav__core-link" href="https://www.secretescapes.com/vouchers-offer">Gift Vouchers</a></li
+          ><li class="nav__core-item"><a class="nav__core-link nav__core-link--current" href="{{ site.baseurl }}">Lima</a></li>
+        </ul>
+        <!-- MICROSITE NAVIGATION -->
+        <ul class="nav__microsite">
+          {% assign nav-order = site.pages | sort:"nav-order" %}{% for page in nav-order %}{% if page.title %}<li class="nav__microsite-item nav__microsite-item--{{ page.class }}"><a class="nav__microsite-link" href="{{ site.baseurl }}{{ page.url }}"  style="background-image: url('{{ site.baseurl }}/img/nav/nav.jpg');">{{ page.title }}</a></li>{% endif %}{% endfor %}
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
+</nav>

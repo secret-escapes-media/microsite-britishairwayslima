@@ -1,40 +1,23 @@
 // all custom styles for the site
 
 
-.site-footer {
-  padding-top: 3em;
-  padding-bottom: 3em;
-  color: darken( $white, 20 );
-  text-align: center;
-  font-size: .8em;
+body { background-color: $black; }
+
+.site-footer{
+  padding-top: ($margin * 1.5);
+  padding-bottom: ($margin * 1.5);
+  color: darken($white, 20);
+  font-size: 0.833em;
   font-weight: 400;
   background-color: $black;
-}
-
-
-// ---------- Background images ----------
-
-.section--fixed-bg {
-  padding-top: 8em;
-  padding-bottom: 8em;
-  color: $white;
-  background-color: $se-light-grey;
-  background: $se-light-grey center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  p { font-weight: 400; }
-  .page-content &:first-child:before {
-    content: '';
-    display: block;
-    height: 3.375em;
+  text-align: center;
+  p{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $large;
+    text-align: center;
   }
 }
-
-.overview .intro        { background-image: url('../img/bg/bg-01.jpg'); }
-.overview .another      { background-image: url('../img/bg/bg-02.jpg'); }
-.example-page .intro    { background-image: url('../img/bg/bg-04.jpg'); }
-.example-page .another  { background-image: url('../img/bg/bg-03.jpg'); }
-.offers .intro          { background-image: url('../img/bg/bg-05.jpg'); }
 
 
 // ---------- button ----------
@@ -42,14 +25,146 @@
 .btn {
   @include transition;
   display:inline-block;
-  padding: .5em 1.5em;
-  border: 1px solid $se-orange;
-  font-weight: 500;
-  border-radius: 10em;
+  padding: 0.833em 1.728em;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.0833em;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid $se-orange;
+  background-color: $se-orange-66;
+  line-height: 1.2;
+  &.btn-brighter{
+    background-color: $se-orange-85;
+  }
+  &:hover{
+    background-color: $se-orange;
+    text-decoration: none;
+  }
   &:hover {
-    color: white;
     background-color: $se-orange;
     text-decoration: none;
   }
   * + & { margin-top: 1em; }
+  &--small{ font-size: 0.8em; }
+  &--reversed{
+    background-color: $white;
+    border-color: $se-orange-20;
+    color: $se-orange;
+    &:hover{
+      color: $white;
+      background-color: $se-orange-85;
+    }
+  }
+}
+
+
+// ---------- page style ----------
+
+.page-content {
+  text-align: center;
+  background-image: url('../img/bg/overview.jpg');
+  background-attachment: fixed;
+  @include background-attributes;
+}
+
+.page {
+  &__title {
+    &-text {
+      text-shadow: 0px 0px 100px $black;
+      color: $white;
+      &--border {
+        &:before,
+        &:after{
+          content: '';
+          display: block;
+          width: 25%;
+          height: 8px;
+          margin: 0.2592em auto;
+          border: 0;
+          border-top: 2px solid $white-75;
+          border-bottom: 2px solid $white-75;
+        }
+      }
+    }
+  }
+  &__content {
+    &-wrap {
+      padding: 2em 1.5em;
+      text-align: left;
+      color: $text-black;
+      background-color: $white;
+      @include bp(large){
+        padding: 2.488em 3.375em;
+      }
+    }
+  }
+}
+
+
+// ---------- generic double border ----------
+
+.double-border{
+  z-index: $z-content;
+  position: relative;
+  border: 2px solid $white;
+  > *{
+    z-index: $z-content-upper;
+    position: relative;
+  }
+  &:after{
+    content: '';
+    z-index: $z-content;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    display: block;
+    border: 2px solid $white;
+  }
+}
+
+
+// ---------- 360 pano blocks ----------
+
+.three-sixty-pano{
+  &__wrap {
+    padding: 6.192em $margin;
+    font-size: 1.2em;
+    background: $se-dark-grey-85 0 0 repeat-x;
+    background-size: cover;
+    animation: back-and-forth 100s linear infinite;
+    text-align: center;
+    color: $white;
+    @include bp (medium){
+      padding: 4.3em $margin;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    &:hover{
+      animation: super-spin ($transition-time * 2.75) ease-out 1;
+    }
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    @include bp (large){
+      margin-bottom: 0.15em;
+    }
+  }
+  &__title {
+    line-height: 1;
+    margin-bottom: 0;
+  }
 }

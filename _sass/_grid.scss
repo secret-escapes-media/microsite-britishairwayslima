@@ -15,12 +15,16 @@ $margin: 2em;
 
 // -------- grid sections --------
 
+// TODO: probably a better way to do section padding
 section {
   padding-top: 5.063em;
   padding-bottom: 5.063em;
   @include bp( large ) {
     padding-top: 6.192em;
     padding-bottom: 6.192em;
+  }
+  & + & {
+    padding-top: 0;
   }
 }
 

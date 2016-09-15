@@ -34,23 +34,11 @@
 //        Navigation
 ///////////////////////////////////////
 
-  // mobile nav open
-  $('.js-mobile-menu-open').on('click', function(e) {
+  $('.js-nav__icon').on('click', function(e) {
     e.preventDefault();
-    $(this).addClass('mobile-icon__menu--open');
-    $('.mobile-menu').toggleClass('mobile-menu--open');
+    $('body').toggleClass('disable-scroll');
+    $('.js-nav').toggleClass('nav--is-open').toggleClass('nav--is-closed');
   });
-
-  // mobile nav close
-  $('.js-mobile-menu-close').on('click', function(e) {
-    e.preventDefault();
-    $('.js-mobile-menu-open').removeClass('mobile-icon__menu--open');
-    $('.mobile-menu').toggleClass('mobile-menu--open');
-  });
-
-  // current page nav highlight
-  var currentPage = $('body').data('current-page');
-  $('.' + currentPage + ' .microsite-nav__item--' + currentPage).addClass('microsite-nav__item--current');
 
 
 ///////////////////////////////////////
