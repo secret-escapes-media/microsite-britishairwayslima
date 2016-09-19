@@ -1,5 +1,59 @@
-<footer class="site-footer">
-  <div class="row">
-    © Copyright <span class="js-year">2014</span> Secret Escapes
+<footer class="site-footer content--light-color">
+
+
+  <div class="row row--columns-6-6">
+    <div class="row__column">
+      <a class="logo logo--secret-escapes" href="https://www.secretescapes.com/"><img class="js-svg-swap" src="{{ site.baseurl }}/img/logo/secret-escapes.png" alt="Secret Escapes logo"></a>
+    </div>
+
+    <div class="row__column align-right">
+      <a class="logo logo__partner logo--british-airways" href="#"><img class="js-svg-swap" src="{{ site.baseurl }}/img/logo/british-airways.png" alt="British Airways logo"></a>
+      {% if page.class == "overview" or page.class == "flights" or page.class == "travel-tips" %}
+      <a class="logo logo__partner logo--gatwick-airport" href="#"><img class="js-svg-swap" src="{{ site.baseurl }}/img/logo/gatwick-airport.png" alt="Gatwick Airport logo"></a>
+      {% endif %}
+    </div>
   </div>
+
+  <div class="row align-center">
+    <hr />
+  </div>
+
+  <div class="row row--columns-4-4-4">
+
+    <div class="row__column">
+      <ul>
+        {% assign nav-order = site.pages | sort:"nav-order" %}
+        {% for page in nav-order %}
+        {% if page.title %}
+          <li>
+            <a class="h5" href="{{page.url}}">{{page.title}}</a>
+          </li>
+
+          {% if forloop.index == 6 %}
+        </ul>
+      </div>
+      <div class="row__column">
+        <ul>
+          {% endif %}
+
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="row__column">
+      <h4>Hear from our experts</h4>
+      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros vestibulum at eros. </p>
+      <a href="{{site.baseurl}}/experts" class="btn btn--small">Meet our experts</a>
+    </div>
+  </div>
+
+
+  <div class="row align-center">
+    <hr />
+    © Copyright <span class="js-year">2014</span> Secret Escapes<br />
+    * Travel period XX XXX XXXX to XX XXX XXXX and XX XXX XXXX to XX XXX XXXX
+  </div>
+
+
+
 </footer>

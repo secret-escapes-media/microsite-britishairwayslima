@@ -37,7 +37,11 @@
   $('.js-nav__icon').on('click', function(e) {
     e.preventDefault();
     $('body').toggleClass('disable-scroll');
-    $('.js-nav').toggleClass('nav--is-open').toggleClass('nav--is-closed');
+    if($('.js-nav').hasClass('nav--is-open')){
+      $('.js-nav').fadeOut().removeClass('nav--is-open').addClass('nav--is-closed');
+    }else{
+      $('.js-nav').fadeIn().addClass('nav--is-open').removeClass('nav--is-closed');
+    }
   });
 
 
@@ -70,6 +74,52 @@
       $(this).css('background-position', 'center ' + parallax + 'px');
     });
   });
+
+
+
+///////////////////////////////////////
+//      Modal
+///////////////////////////////////////
+
+  var modal         = $('.js-modal'),
+      modalContent  = $('.js-modal__content'),
+      modalClose    = $('.js-modal__close'),
+      modalVideo    = $('.js-modal__video');
+
+  // EVENT - launch modal & populate with content
+  $('.js-launch-modal').on('click', function(e) {
+
+    var expert = $(this).attr('data-expert');
+
+    e.preventDefault();
+
+    // launch modal
+    modal.removeClass('is-closed').addClass('is-open').fadeIn();
+    $('.modal__content#' + expert).addClass('active');
+    $('body').css('overflow', 'hidden');
+
+  });
+
+
+  function closeModal(e) {
+    e.on('click', function() {
+      $('.modal__content.active').removeClass('active');
+      modal.removeClass('is-open').addClass('is-closed').fadeOut();
+      $('body').css('overflow', 'auto');
+    });
+  }
+
+  $(document).keyup(function(e) {
+     if (e.keyCode == 27) { // escape key maps to keycode `27`
+       $('.modal__content.active').removeClass('active');
+       modal.removeClass('is-open').addClass('is-closed').fadeOut();
+       $('body').css('overflow', 'auto');
+      }
+  });
+
+  // close modal on icon and bg click
+  closeModal(modalClose);
+  // closeModal(modal);
 
 
 ///////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,49 @@
+  - name: Jacob Moon
+    firstname: Jacob
+    surname: Moon
+    class: jacob-moon
+    introduction: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+    interview: >
+      <h4>Where did you grow up?</h4>
+      <p>I grew up in Langenthal, a typical Swiss town between Bern and Zurich. I inherited a love for the mountains from my parents, who went on hiking and skiing holidays with me and my sister as often as possible.</p><p>That’s where I discovered the my love for the beauty of my little home country. My passion for photography has grown from this.</p>
+
+      <h4>How did you first get into photography?</h4>
+      <p>My father was always a passionate photographer. He always carried his camera with him. When I was 14 years old he surprised me by giving me one of his old cameras.</p>
+
+      <h4>What’s your go-to place for great imagery?</h4>
+      <p>There’s no better place to be than early in the morning around by Stelli Lake above Zermatt, watching the sunrise. It’s never the same as it was the last time. It’s my personal happy place.</p>
+
+      <h4>Are you more a hike or bike kinda girl?</h4>
+      <p>I’m definitely a hiking girl. I spend a lot of my summer hiking or trekking in the Swiss Alps. One of my favourite things to do is to spend the night at a Swiss Alpine Club Cabin somewhere remote in the Alps.</p>
+
+      <h4>Where do you go for great walks?</h4>
+      <p>It depends who’s with me. If I take photographers or Instagrammers with me, I lead them to my favourite photo spots. That’s often around Zermatt to get the best view of the Matterhorn. Sometimes we go to Bettmeralp to see the Aletsch glacier.</p>
+
+      <h4>Where are your favourite places to eat in Switzerland?</h4>
+      <p>My number one is Chez Vrony, Zermatt. They serve a lot of traditional Swiss dishes with an awesome view of the Matterhorn. There’s nothing better than to hike around Zermatt and relax on the terrace of Chez Vrony. Try the Vrony Burger!</p>
+      <p>The second is Casa Novo in Bern. I’m working in Bern so I spend a lot of time here. In summer there’s a terrace by the river Aare where you can dine and admire the deep turquoise colour of the river.</p>
+      <p>Or another good spot in Bern is Restaurant Rosengarten where you can dine with a view over the old town, which is a UNESCO World Heritage Site.</p>
+
+      <h4>If you had only 7 days to spend in Switzerland where would you go?</h4>
+      <p>Lucerne, Zermatt, Bern and Interlaken are always a good choice. I would recommend walking a bit off the beaten tracks. Maybe visit out Fribourg instead of Bern or Thun instead of Interlaken.</p><p>Switzerland is so much more than the famous spots. There are a lot of wonderful mountain lakes, restaurants with an awesome views and cabins to discover.</p>
+
+      <h4>Any hidden gems for people coming here in the summer?</h4>
+      <p>Stop at Handeck and take the funicular up to the Gelmersee, you’ll feel like you’re sitting on a roller coaster!</p>
+
+
+
+  - name: Robert Ortiz
+    firstname: Robert
+    surname: Ortiz
+    class: robert-ortiz
+    introduction: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+    interview: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+
+
+  - name: Rafael Piqueras
+    firstname: Rafael
+    surname: Piqueras
+    class: rafael-piqueras
+    introduction: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+    interview: Lorem ipsum dolor sit amet, consectetur adipisicing elit.

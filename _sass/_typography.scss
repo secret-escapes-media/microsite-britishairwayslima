@@ -28,7 +28,6 @@ h4, .h4,
 h5, .h5 {
   font-family: $title-font-family;
   text-transform: uppercase;
-  text-align: center;
 }
 
 h1, .h1 {
@@ -36,6 +35,7 @@ h1, .h1 {
   margin-bottom: .2em;
   letter-spacing: -.015em;
   font-size: 3.375em;
+  text-align: center;
   @include bp( medium ) {
     font-size: 4em;
   }
@@ -67,19 +67,75 @@ h3, .h3 {
   }
 }
 
-h4, .h4 { font-size: 1.728em; }
+h4, .h4 { font-size: 1.728em; line-height: 1.1; margin-bottom: .5em; }
+
+
+
+// ---------- button ----------
+
+.btn {
+  @include transition;
+  display:inline-block;
+  padding: 0.833em 1.728em;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.0833em;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid $se-orange;
+  background-color: $se-orange-66;
+  line-height: 1.2;
+  &.btn--brighter{
+    background-color: $se-orange-85;
+  }
+  &:hover{
+    background-color: $se-orange;
+    text-decoration: none;
+  }
+  &:hover {
+    background-color: $se-orange;
+    text-decoration: none;
+  }
+  * + & { margin-top: 1em; }
+  &--small{ font-size: 0.8em; }
+  &--reversed{
+    background-color: $white;
+    border-color: $se-orange-20;
+    color: $se-orange;
+    &:hover{
+      color: $white;
+      background-color: $se-orange-85;
+    }
+  }
+}
 
 
 // -------- general content styles --------
 
+.align-left     { text-align: left; }
+.align-right    { text-align: right; }
+.align-center   { text-align: center; }
+hr { border: 0; height: 1px; background-color: lighten($text, 50%); margin: 2em auto; }
+
 .page-content {
-  p + *         { margin-top: 1em; }
-  li            { list-style-position: inside; }
-  ul li         { list-style-type: disc; }
-  ol li         { list-style-type: decimal; }
-  em            { font-style: italic; }
-  strong        { font-weight: 600; }
-  .align-left   { text-align: left; }
-  .align-right  { text-align: right; }
-  .align-center { text-align: center; }
+  p + *           { margin-top: 1em; }
+  p               { max-width: $xlarge; color: $text; }
+  li              { list-style-position: inside; }
+  ul li           { list-style-type: disc; }
+  ol li           { list-style-type: decimal; }
+  em              { font-style: italic; }
+  strong          { font-weight: 600; }
+  .align-center p { margin-left: auto; margin-right: auto; }
+  .text-nm        { margin: 0; }
+  .text-justify   { text-align: justify; }
+  .lead { font-size: 1.15em; line-height: 1.6; font-weight: 600; letter-spacing: 0; }
+
+
 }
+
+.content--light-color {
+  color: white;
+  p { color: white; }
+  hr { background-color: rgba(255,255,255,0.1); }
+}
+

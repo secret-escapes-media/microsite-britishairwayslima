@@ -39,7 +39,7 @@ $site-header-height: 90px;
   }
   &__divider {
     display: inline-block;
-    border-left: 1px solid $white-33;
+    border-left: 1px solid $white-15;
     height: ( $site-header-height / 1.5 );
     width: 1em;
     margin-left: 1em;
@@ -58,7 +58,6 @@ $nav__icon-size: 27px;
   text-align: center;
   background-color: $black-85;
   overflow-y: scroll;
-  @include transition;
   &--is-closed {
     display: none;
   }
@@ -81,7 +80,6 @@ $nav__icon-size: 27px;
   &__wrap {
     padding-top: $margin;
     padding-bottom: $margin;
-    border-top: 1px solid $white-33;
   }
   &__core {
     margin-bottom: $margin;
@@ -127,6 +125,7 @@ $nav__icon-size: 27px;
       @include transition;
       @include background-attributes;
       &:hover {
+        letter-spacing: .025em;
         text-decoration: none;
         background-color: $white;
       }

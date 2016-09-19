@@ -2,20 +2,15 @@
 layout: default
 ---
 
+
 <section class="page__title site-header__offset">
   <div class="row row--padding">
     <h1 class="page__title-text page__title-text--border">{{ page.title }}</h1>
   </div>
 </section>
 
-<section class="page__content">
-  <div class="row--margin">
-    <div class="row row--padding page__content-wrap">
-      {% if content == "" %}
-      {% include general-content.html %}
-      {% else %}
-        {{content}}
-      {% endif %}
-    </div>
-  </div>
-</section>
+
+{{content}}
+
+
+{% include ba-promo.html %}
