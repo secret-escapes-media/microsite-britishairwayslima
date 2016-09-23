@@ -36,7 +36,7 @@ nav-order: 1
 <section class="content-list">
   <div class="row row--columns-6-6 row--columns-6-6-gutters">
     {% assign pages = site.pages | sort:"nav-order" %}
-    {% for page in pages %}{% if page.title and page.class != "overview" and page.class != "competition" %}
+    {% for page in pages %}{% if page.nav-order and page.class != "overview" and page.class != "competition" %}
     <div class="content-list--item row__column double-border bg-image-ratio bg-image-ratio--4-3" style="background-image: url('{{ site.baseurl }}/img/content/overview-{{ page.class }}.jpg')">
       <a href="{{ site.baseurl }}{{ page.url }}" class="content-list--link content-list--link-border" id="overview-nav-{{ page.class }}">
         <h3 class="text-nm">{{ page.title }}</h3>
@@ -50,9 +50,9 @@ nav-order: 1
 
 <section>
   <div class="row">
-    <div class="row row--columns-6-6 row--columns-6-6-gutters row--columns-vertical-align card card--bg-black content--light-color double-border">
+    <div class="row row--columns-6-6 row--columns-6-6-gutters row--columns-vertical-align card card--bg-black content--light-color">
 
-      <a href="{{site.baseurl}}/competition" class="card__image row__column bg-image-ratio bg-image-ratio--4-3" style="background-image: url({{site.baseurl}}/img/content/overview-competition.jpg)"></a>
+      <a href="{{site.baseurl}}/competition" class="card__image row__column bg-image-ratio bg-image-ratio--4-3 double-border" style="background-image: url({{site.baseurl}}/img/content/overview-competition.jpg)"></a>
 
       <div class="row__column card__content">
         <h3>Enter the competition</h3>

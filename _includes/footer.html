@@ -24,12 +24,12 @@
       <ul>
         {% assign nav-order = site.pages | sort:"nav-order" %}
         {% for page in nav-order %}
-        {% if page.title %}
+        {% if page.nav-order %}
           <li>
-            <a class="h5" href="{{page.url}}">{{page.title}}</a>
+            <a class="h5" href="{{ site.baseurl }}{{page.url}}">{{page.title}}</a>
           </li>
 
-          {% if forloop.index == 6 %}
+          {% if forloop.index == 7 %}
         </ul>
       </div>
       <div class="row__column">

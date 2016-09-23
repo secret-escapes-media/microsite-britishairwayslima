@@ -1,5 +1,5 @@
 <header class="site-header">
-  <div class="row">
+  <div class="row row--padding">
     <div class="site-header__wrap">
 
       <!-- NAV & SE LOGO -->
@@ -22,7 +22,7 @@
 <nav class="js-nav nav nav--is-closed">
   <div class="site-header__offset">
     <div class="nav__wrap">
-      <div class="row">
+      <div class="row row--padding">
         <!-- CORE NAVIGATION -->
         <ul class="nav__core">
            <li class="nav__core-item"><a class="nav__core-link" href="https://www.secretescapes.com/current-sales">Current Sales</a></li
@@ -33,7 +33,7 @@
         </ul>
         <!-- MICROSITE NAVIGATION -->
         <ul class="nav__microsite">
-          {% assign nav-order = site.pages | sort:"nav-order" %}{% for page in nav-order %}{% if page.title %}<li class="nav__microsite-item nav__microsite-item--{{ page.class }}"><a class="nav__microsite-link" href="{{ site.baseurl }}{{ page.url }}"  style="background-image: url('{{ site.baseurl }}/img/nav/nav-{{page.class}}.jpg');">{{ page.title }}</a></li>{% endif %}{% endfor %}
+          {% assign nav-order = site.pages | sort:"nav-order" %}{% for page in nav-order %}{% if page.nav-order %}<li class="nav__microsite-item nav__microsite-item--{{ page.class }}"><a class="nav__microsite-link" href="{{ site.baseurl }}{{ page.url }}"  style="background-image: url('{{ site.baseurl }}/img/nav/nav-{{page.class}}.jpg');">{{ page.title }}</a></li>{% endif %}{% endfor %}
           <!-- COMPETITION -->
         </ul>
       </div>
