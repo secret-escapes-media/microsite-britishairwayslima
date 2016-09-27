@@ -46,7 +46,7 @@ $site-header-mobile-height: 90px;
       text-align: left;
       width: 190px;
       @include bp( medium ) {
-        width: 250px;
+        width: 295px;
       }
     }
     &--right {
@@ -105,6 +105,17 @@ $nav__icon-size: 27px;
         background-size: $nav__icon-size auto;
       }
       svg & { background-image: url("../img/icon/menu.svg"); }
+    }
+    &--back {
+      display: none;
+      @include bp( large ) {
+        display: inline-block;
+        @include background-attributes;
+        background-image: url("../img/icon/back.png");
+        background-size: $nav__icon-size auto;
+        margin-right: 10px;
+        svg & { background-image: url("../img/icon/back.svg"); }
+      }
     }
   }
   &__wrap {

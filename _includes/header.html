@@ -4,6 +4,8 @@
 
       <!-- NAV & SE LOGO -->
       <div class="site-header__column site-header__column--left">
+        {% if page.class != 'overview' %}
+        <a href="{{site.baseurl}}" class="nav__icon nav__icon--back site-header__item site-header__item--left"></a>{% endif %}
         <a class="js-nav__icon nav__icon nav__icon--menu site-header__item site-header__item--left"></a>
         <span class="site-header__divider"></span>
         <a class="logo logo--secret-escapes" href="https://www.secretescapes.com/"><img class="js-svg-swap" src="{{ site.baseurl }}/img/logo/secret-escapes.png" alt="Secret Escapes logo"></a>
