@@ -11,28 +11,31 @@ nav-order: 8
 
 <div class="row row--padding content--light-color card card--bg-black align-center double-border double-border--outer">
   <div class="card__content">
-    <p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+    <p class="lead">Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. </p>
   </div>
 </div>
+
+
+
+<section class="content-list expert-list">
+  <div class="row row--columns-6-6 row--columns-6-6-gutters">
+    {% for expert in experts %}
+    <a href="#" class="content-list--item row__column double-border bg-image-ratio bg-image-ratio--4-3 js-launch-modal" data-expert="{{expert.class}}" style="background-image: url('{{ site.baseurl }}/img/content/expert-{{expert.class}}.jpg')">
+      <span class="content-list--link content-list--link-border">
+        <h2 class="text-nm">{{ expert.name }}</h2>
+      </span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
 
 
 
 <section class="page__content">
   <div class="row--margin">
 
-    {% for expert in experts %}
-    <div class="row row--columns-5-7 row--columns-5-7-gutters row--columns-vertical-align card">
-      <a href="#" class="card__image row__column bg-image-ratio bg-image-ratio--1-1 js-launch-modal" style="background-image: url({{site.baseurl}}/img/content/expert-{{expert.class}}.jpg)"></a>
-      <div class="row__column card__content">
-        <h2 class="h3">{{expert.name}}</h2>
-        <p>{{expert.introduction}}</p>
-        <a href="#" class="btn btn--brighter btn--small js-launch-modal" data-expert="{{expert.class}}">Read {{expert.firstname}}'s interview</a>
-      </div>
-    </div>
-    {% endfor %}
-
     <!-- WILL PEARSON -->
-    <div class="row row--columns-5-7 row--columns-5-7-gutters row--columns-vertical-align card">
+    <div class="row row--columns-5-7 row--columns-5-7-gutters row--columns-vertical-align content--light-color card card--bg-black double-border double-border--outer">
       <a href="{{site.baseurl}}/will-pearson" class="card__image row__column bg-image-ratio bg-image-ratio--1-1" style="background-image: url({{site.baseurl}}/img/content/expert-will-pearson.jpg)"></a>
       <div class="row__column card__content">
         <h2 class="h3">Will Pearson</h2>
@@ -43,28 +46,9 @@ nav-order: 8
 
   </div>
 
-
-  <!-- Expert modal -->
-  <div class="js-modal modal is-closed" style="display: none;">
-    <div class="js-modal__close modal__close"></div>
-    <div class="row">
-      {% for expert in experts %}
-        <div id="{{expert.class}}" class="modal__content row row--padding is-closed">
-          <div class="row row--columns-5-7 row--columns-5-7-gutters row--columns-vertical-align">
-            <div class="row__column modal__image bg-image-ratio bg-image-ratio--1-1" style="background-image: url({{site.baseurl}}/img/content/expert-{{expert.class}}.jpg)"></div>
-            <div class="row__column">
-              <h2>{{expert.name}}</h2>
-              <p class="lead">{{expert.introduction}}</p>
-            </div>
-          </div>
-          <hr />
-          {{expert.interview}}
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-
 </section>
+
+{% include expert-modal.html %}
 
 
 

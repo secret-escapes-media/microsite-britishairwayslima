@@ -21,12 +21,12 @@ nav-order: 1
 
     <div class="three-sixty-pano">
       <div class="three-sixty-pano__wrap double-border" style="background-image: url('{{site.baseurl}}/img/three-sixty-pano/lighthouse.jpg');">
-        <a class="three-sixty-pano__icon" href="#link-to-pano">
+        <a class="three-sixty-pano__icon" href="https://www.secretescapes.com/britishairwayslima/three-sixty-image/paraglide-miraflores/index.html">
           <img class="js-svg-swap" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 icon">
         </a>
         <div class="three-sixty-pano__subtitle">Fly Over Lima</div>
         <h2 class="three-sixty-pano__title">Paraglide Miraflores</h2>
-        <a href="#link-to-pano" class="btn">Take A Virtual Tour</a>
+        <a href="https://www.secretescapes.com/britishairwayslima/three-sixty-image/paraglide-miraflores/index.html" class="btn">Take A Virtual Tour</a>
       </div>
     </div>
 
@@ -40,7 +40,7 @@ nav-order: 1
     {% for page in pages %}{% if page.nav-order and page.class != "overview" and page.class != "competition" %}
     <div class="content-list--item row__column double-border bg-image-ratio bg-image-ratio--4-3" style="background-image: url('{{ site.baseurl }}/img/content/overview-{{ page.class }}.jpg')">
       <a href="{{ site.baseurl }}{{ page.url }}" class="content-list--link content-list--link-border" id="overview-nav-{{ page.class }}">
-        <h3 class="text-nm">{{ page.title }}</h3>
+        <h2 class="text-nm">{{ page.title }}</h2>
       </a>
     </div>
     {% endif %}{% endfor %}

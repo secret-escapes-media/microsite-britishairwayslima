@@ -11,6 +11,7 @@ body { background-color: $black; }
   color: darken($white, 20);
   font-size: 0.833em;
   font-weight: 400;
+  background-image: none !important;
   background-color: $black;
   text-align: center;
   @include bp(large){
@@ -21,6 +22,7 @@ body { background-color: $black; }
     margin-right: auto;
     max-width: $large;
   }
+  ul li { list-style-type: none; }
   .logo__partner {
     margin-top: 0;
     margin-left: auto;
@@ -157,7 +159,7 @@ body { background-color: $black; }
     text-transform: uppercase;
     margin-bottom: 0.5em;
     @include bp (large){
-      margin-bottom: 0.15em;
+      margin-bottom: 1em;
     }
   }
   &__title {
@@ -181,7 +183,7 @@ body { background-color: $black; }
     left: 0;
     right: 0;
     bottom: 0;
-    padding-top: 25.5%;
+    padding-top: 29%;
     text-align: center;
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…hlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
     background: radial-gradient(ellipse at center,rgba(0,0,0,.5) 0,transparent 66%,transparent 100%);
@@ -203,6 +205,18 @@ body { background-color: $black; }
       &:hover:after  { background-color: #fff; }
     }
     &:hover { text-decoration: none; letter-spacing: .025em; }
+  }
+}
+
+.expert-list {
+  .content-list--item {
+    display: block;
+    &:hover {
+      .content-list--link { text-decoration: none; letter-spacing: .025em; }
+    }
+  }
+  .content-list--link {
+    top: auto; bottom: 40px; padding: 0; font-size: 0.9em;
   }
 }
 
@@ -314,6 +328,6 @@ body { background-color: $black; }
 
 
 .travel-tips {
-  &--image { margin-bottom: 0.5em; }
+  &--image { margin-bottom: 1em; }
 }
 

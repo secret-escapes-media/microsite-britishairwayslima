@@ -35,7 +35,7 @@
         </ul>
         <!-- MICROSITE NAVIGATION -->
         <ul class="nav__microsite">
-          {% assign nav-order = site.pages | sort:"nav-order" %}{% for page in nav-order %}{% if page.nav-order %}<li class="nav__microsite-item nav__microsite-item--{{ page.class }}"><a class="nav__microsite-link" href="{{ site.baseurl }}{{ page.url }}"  style="background-image: url('{{ site.baseurl }}/img/nav/nav-{{page.class}}.jpg');">{{ page.title }}</a></li>{% endif %}{% endfor %}
+          {% assign nav-order = site.pages | sort:"nav-order" %}{% for page in nav-order %}{% if page.nav-order %}<li class="nav__microsite-item nav__microsite-item--{{ page.class }}"><a class="nav__microsite-link double-border" href="{{ site.baseurl }}{{ page.url }}"  style="background-image: url('{{ site.baseurl }}/img/nav/nav-{{page.class}}.jpg');">{{ page.title }}</a></li>{% endif %}{% endfor %}
           <!-- COMPETITION -->
         </ul>
       </div>

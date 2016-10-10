@@ -109,6 +109,15 @@ section {
     margin-bottom: gutter();
   }
 
+  // four columns without gutter
+  .row--columns-3-3-3-3 .row__column { @include gallery(3); }
+
+  // four columns with gutter
+  .row--columns-3-3-3-3-gutters .row__column {
+    @include gallery($gutters 3);
+    margin-bottom: gutter();
+  }
+
   // vertical align floated columns
   .row--columns-vertical-align {
     display: flex;

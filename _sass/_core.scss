@@ -60,11 +60,36 @@ $small:   300px;
   }
 }
 
+// max-width bp
+@mixin max-bp($width){
+  @if $width == xxlarge {
+    @media (max-width:$xxlarge) {@content;}
+  }
+  @if $width == xlarge {
+    @media (max-width:$xlarge) {@content;}
+  }
+  @if $width == large {
+    @media (max-width:$large) {@content;}
+  }
+  @if $width == medium {
+    @media (max-width:$medium) {@content;}
+  }
+  @if $width == small {
+    @media (max-width:$small) {@content;}
+  }
+}
+
+// hide elements based on breakpoints
+@include max-bp( xxlarge ) { .bp-xxlarge--hide { display: none !important; } }
+@include max-bp( xlarge )  { .bp-xlarge--hide { display: none !important; } }
+@include max-bp( large )   { .bp-large--hide { display: none !important; } }
+@include max-bp( medium )  { .bp-medium--hide { display: none !important; } }
+@include max-bp( small )   { .bp-small--hide { display: none !important; } }
+
 // vertical breakpoint for small screen mobile
 @mixin bp-vertical {
   @media (max-height:$medium) and (max-width:$large) { @content; }
 }
-
 
 // -------- global box-sizing & font smoothing --------
 

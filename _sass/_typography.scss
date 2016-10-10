@@ -4,17 +4,17 @@
 // -------- root typography styles --------
 
 $core-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-$main-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-$title-font-family: 'Open Sans Condensed', 'Helvetica Neue', sans-serif;
+$main-font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+$title-font-family: 'Roboto Condensed', 'Helvetica Neue', sans-serif;
 
 html { font-size:62.5%; }
 body,
 input, textarea, keygen, select, button {
-  font: 400 14px/1.728 $main-font-family;
+  font: 400 15px/1.728 $main-font-family;
   letter-spacing: -.015em;
   -webkit-text-size-adjust: 100%;
   @include bp( large ) {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -29,6 +29,7 @@ h5, .h5 {
   font-family: $title-font-family;
   text-transform: uppercase;
   line-height: 1.05;
+  font-weight: 700;
 }
 
 h1, .h1 {
@@ -53,22 +54,19 @@ h2, .h2 {
     font-size: 2.488em;
   }
   @include bp( large ) {
-    font-size: 2.986em;
+    font-size: 2.786em;
   }
 }
 
 h3, .h3 {
-  margin-bottom: .5em;
+  margin-bottom: .3em;
   font-size: 1.728em;
-  @include bp( medium ) {
-    font-size: 2.074em;
-  }
   @include bp( large ) {
-    font-size: 2.488em;
+    font-size: 2.074em;
   }
 }
 
-h4, .h4 { font-size: 1.728em; line-height: 1.1; margin-bottom: .5em; }
+h4, .h4 { font-size: 1.528em; line-height: 1.1; margin-bottom: .5em; }
 
 
 
@@ -97,7 +95,6 @@ h4, .h4 { font-size: 1.728em; line-height: 1.1; margin-bottom: .5em; }
     background-color: $se-orange;
     text-decoration: none;
   }
-  * + & { margin-top: 1em; }
   &--small{ font-size: 0.8em; }
   &--reversed{
     background-color: $white;
@@ -120,6 +117,7 @@ hr { border: 0; height: 1px; background-color: lighten($text, 50%); margin: 2em 
 
 .page-content {
   p + *           { margin-top: 1em; }
+  * + .btn        { margin-top: 1.5em; }
   p               { max-width: $xlarge; color: $text; }
   li              { list-style-position: inside; }
   ul li           { list-style-type: disc; }
@@ -129,7 +127,7 @@ hr { border: 0; height: 1px; background-color: lighten($text, 50%); margin: 2em 
   .align-center p { margin-left: auto; margin-right: auto; }
   .text-nm        { margin: 0; }
   .text-justify   { text-align: justify; }
-  .lead { font-size: 1.15em; line-height: 1.6; font-weight: 600; letter-spacing: 0; }
+  .lead { font-size: 1.25em; line-height: 1.6; letter-spacing: 0; }
 
 
 }

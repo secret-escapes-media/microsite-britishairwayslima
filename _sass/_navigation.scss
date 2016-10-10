@@ -13,7 +13,7 @@ $site-header-mobile-height: 90px;
   color: $white;
   text-align: center;
   vertical-align: middle;
-  background-color: $black-66;
+  background-color: $black-85;
 
   height: $site-header-mobile-height;
   @include bp( xlarge ) {
@@ -113,7 +113,7 @@ $nav__icon-size: 27px;
         @include background-attributes;
         background-image: url("../img/icon/back.png");
         background-size: $nav__icon-size auto;
-        margin-right: 10px;
+        margin-right: 15px;
         svg & { background-image: url("../img/icon/back.svg"); }
       }
     }
@@ -151,8 +151,9 @@ $nav__icon-size: 27px;
     @include clearfix;
     &-item {
       @include bp(large){
-        @include gallery(6);
+        @include gallery($gutters 6);
       };
+      padding-bottom: $margin;
     }
     &-link {
       display: block;

@@ -1,0 +1,60 @@
+<!-- Expert modal -->
+
+<!--  incrementing image number to loop through experts photos -->
+
+<div class="js-modal modal is-closed" style="display: none;">
+  <div class="js-modal__close modal__close"></div>
+  <div class="row">
+
+    {% for expert in experts %}
+    {% assign imageNum = 0 %}
+    
+      <div id="{{expert.class}}" class="modal__content row row--padding is-closed">
+        <div class="row row--columns-5-7 row--columns-5-7-gutters row--columns-vertical-align">
+          <div class="row__column modal__image bg-image-ratio bg-image-ratio--1-1" style="background-image: url({{site.baseurl}}/img/content/expert-{{expert.class}}.jpg)"></div>
+          <div class="row__column">
+            <h2>{{expert.name}}</h2>
+            <p class="lead">{{expert.introduction}}</p>
+          </div>
+        </div>
+        <hr />
+
+        <!--  loop interview sections -->
+        {% for interview-section in expert.interview-sections %}
+
+          {% if interview-section.images == 'before' %}
+            {% assign imageNum = imageNum | plus: 2 %}
+            <div class="row row--columns-6-6 row--columns-6-6-gutters">
+              <div
+                class="row__column bg-image-ratio bg-image-ratio--4-3" style="background-image:url({{site.baseurl}}/img/content/{{expert.class}}-img-0{{ imageNum | minus: 1 }}.jpg);">
+              </div>
+              <div
+                class="row__column bg-image-ratio bg-image-ratio--4-3" style="background-image:url({{site.baseurl}}/img/content/{{expert.class}}-img-0{{ imageNum }}.jpg);">
+              </div>
+            </div>
+          {% endif %}
+
+          <div class="row">
+            {{ interview-section.content }}
+          </div>
+
+          {% if interview-section.images == 'after' %}
+            {% assign imageNum = imageNum | plus: 2 %}
+            <div class="row row--columns-6-6 row--columns-6-6-gutters">
+              <div
+                class="row__column bg-image-ratio bg-image-ratio--4-3" style="background-image:url({{site.baseurl}}/img/content/{{expert.class}}-img-0{{ imageNum | minus: 1 }}.jpg);">
+              </div>
+              <div
+                class="row__column bg-image-ratio bg-image-ratio--4-3" style="background-image:url({{site.baseurl}}/img/content/{{expert.class}}-img-0{{ imageNum }}.jpg);">
+              </div>
+            </div>
+          {% endif %}
+
+        {% endfor %}
+        <!--  end loop interview sections -->
+
+      </div>
+    {% endfor %}
+
+  </div>
+</div>
