@@ -4,11 +4,11 @@
 
 <div class="js-modal modal is-closed" style="display: none;">
   <div class="js-modal__close modal__close"></div>
-  <div class="row">
+  <div class="row interview">
 
     {% for expert in experts %}
     {% assign imageNum = 0 %}
-    
+
       <div id="{{expert.class}}" class="modal__content row row--padding is-closed">
         <div class="row row--columns-5-7 row--columns-5-7-gutters row--columns-vertical-align">
           <div class="row__column modal__image bg-image-ratio bg-image-ratio--1-1" style="background-image: url({{site.baseurl}}/img/content/expert-{{expert.class}}.jpg)"></div>

@@ -29,7 +29,9 @@ h5, .h5 {
   font-family: $title-font-family;
   text-transform: uppercase;
   line-height: 1.05;
+  letter-spacing: 0.02em;
   font-weight: 700;
+  color: $text-headings;
 }
 
 h1, .h1 {
@@ -66,7 +68,12 @@ h3, .h3 {
   }
 }
 
-h4, .h4 { font-size: 1.528em; line-height: 1.1; margin-bottom: .5em; }
+h4, .h4 {
+  font-size: 1.528em;
+  line-height: 1.1;
+  margin-bottom: .5em;
+  text-transform: none;
+}
 
 
 
@@ -121,20 +128,32 @@ hr { border: 0; height: 1px; background-color: lighten($text, 50%); margin: 2em 
   p               { max-width: $xlarge; color: $text; }
   li              { list-style-position: inside; }
   ul li           { list-style-type: disc; }
-  ol li           { list-style-type: decimal; }
   em              { font-style: italic; }
   strong          { font-weight: 600; }
   .align-center p { margin-left: auto; margin-right: auto; }
   .text-nm        { margin: 0; }
   .text-justify   { text-align: justify; }
   .lead { font-size: 1.25em; line-height: 1.6; letter-spacing: 0; }
-
-
 }
 
 .content--light-color {
   color: white;
   p { color: white; }
   hr { background-color: rgba(255,255,255,0.1); }
+  h1,h2,h3,h4,h5,
+  .h1,.h2,.h3,.h4,.h5 { color: #ffffff; }
 }
 
+
+ol {
+  li {
+    list-style-type: none;
+    padding-left: 15px;
+    position: relative;
+    &:before {
+      content: "- ";
+      position: absolute;
+      left: 0;
+    }
+  }
+}

@@ -13,6 +13,7 @@ body { background-color: $black; }
   font-weight: 400;
   background-image: none !important;
   background-color: $black;
+  color: #ffffff;
   text-align: center;
   @include bp(large){
     text-align: left;
@@ -22,6 +23,8 @@ body { background-color: $black; }
     margin-right: auto;
     max-width: $large;
   }
+  h5, .h5 { color: #ffffff; }
+  h4, .h4 { color: #ffffff; }
   ul li { list-style-type: none; }
   .logo__partner {
     margin-top: 0;
@@ -128,6 +131,7 @@ body { background-color: $black; }
 // ---------- 360 pano blocks ----------
 
 .three-sixty-pano{
+  margin-top: 3em !important;
   &__wrap {
     padding: 6.192em $margin;
     font-size: 1.2em;
@@ -158,6 +162,7 @@ body { background-color: $black; }
     line-height: 1;
     text-transform: uppercase;
     margin-bottom: 0.5em;
+    color: #ffffff;
     @include bp (large){
       margin-bottom: 1em;
     }
@@ -165,6 +170,7 @@ body { background-color: $black; }
   &__title {
     line-height: 1;
     margin-bottom: 0;
+    color: #ffffff;
   }
 }
 
@@ -188,6 +194,7 @@ body { background-color: $black; }
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…hlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
     background: radial-gradient(ellipse at center,rgba(0,0,0,.5) 0,transparent 66%,transparent 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00000000', GradientType=1 );
+    h2 { color: white;}
     &-border {
       &:before,
       &:after{
@@ -304,7 +311,7 @@ body { background-color: $black; }
     @include bp (xlarge){
       background-position: 100% 58%;
     }
-    h3 { text-align: left; }
+    h3 { text-align: left; color: #ffffff; }
   }
   .column {
     max-width: 500px;
@@ -331,3 +338,10 @@ body { background-color: $black; }
   &--image { margin-bottom: 1em; }
 }
 
+
+
+.interview {
+  h4 {
+    font-size: 1.2em;
+  }
+}

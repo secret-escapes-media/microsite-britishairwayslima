@@ -2,23 +2,41 @@
     firstname: Jacob
     surname: Moon
     class: jacob-moon
-    introduction: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+    introduction: Jacob Moon has a habit of reaching the most precarious spots in the world and then shooting the most incredible photos we’ve ever seen! More at home up a mountain than in a hotel, Jacob is an avid rock and ice climber, and passionate mountaineer, offering us awe-inspiring images of the most far-flung, and daring places in the world.
     interview-sections:
       - images: after
         content: >
-          <h4>Where did you grow up?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+          <h4>How did you first get into Photography?</h4>
+          <p>The first time I ever set out to climb a mountain, I took my dad’s camera with me to document the climb. Since then I have been taking a camera with me every time I go out into the mountains to document the experience. Then 2 years ago the app Instagram came along which taught and inspired me to refine my photography. </p>
 
-          <h4>How did you first get into photography?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+          <h4>How much planning goes into a photo? Do you have an idea of what you want before you are even in the country, or do you freestyle? </h4>
+          <p>If the location is completely new to me I will often use Google to get an idea of what is there by searching for images of the area. </p>
+          <p>Basically I make a detailed topographical map in my mind that will help me decide points of interest, how to navigate the terrain, and what time of day will provide the best lighting on my subject.  </p>
+          <p>While on location, the flow of photography is very much geared towards being more freestyle while keeping the previously decided points of interest in mind to help give me direction during the day. By taking photos in a more freestyle format, it allows the day and landscape to continually inspire me with what needs to be captured by the camera. </p>
 
       - images:
         content: >
-          <h4>Where did you grow up?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+          <h4>What are some of your favorite landscapes to photograph? </h4>
+          <p>I particularly love photographing mountain ridges at sunrise or sunset, while on the ridge itself. Watching the mountain ridge beneath my feet take on that alpine glow, and the mountains in the distance slowly turn pink, and then losing the light as it fades across the sky, makes for a truly special time to capture shots. </p>
 
-          <h4>How did you first get into photography?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+          <h4>What are the best methods to travel around Peru?</h4>
+          <p>Travelling around Peru is very simple and doesn't require any real planning prior to visiting. Peru has a widespread taxi and bus system that will take you practically anywhere you’d like to go at a very affordable price. The only thing that would need to be considered is your susceptibility to motion sickness. The mountainous areas of Peru, such as the area around Cusco, have high mountain pass roads with hundreds of switchbacks (hairpins) running up and down them, which may cause some to get very motion sick. </p>
+
+      - images:
+        content: >
+          <h4>What is your best ‘hidden gem’ of Peru? </h4>
+          <p>The best hidden gem that I have experienced in Peru has to be the Cordillera Huayhuash Mountains. Just to the south of the Cordillera Blanca Mountains and the city of Huaraz, the spine of Cordillera Huayhuash rises sharply into the sky, reaching 6,635 meters. It has been said that the trek around these mountains is the most beautiful of its kind in the world, and after having done it twice, I’d have to agree. When I think of beautiful mountains, I think of the Cordillera Huayhuash.</p>
+
+          <h4>Did you ever get a chance to check out the nightlife in Peru?</h4>
+          <p>The only nights that I went out were in the mountains to see the star-lit skies above my tent. The stars in the mountains of Peru are overwhelmingly beautiful. Without any major cities anywhere near the mountains to give off light pollution, plus the generally high elevations at which I camped, the brightness of the stars are the best I’ve ever seen.</p>
+
+      - images:
+        content: >
+          <h4>What’s the best piece of travel advice you’ve ever received? </h4>
+          <p>Plan the trip like your life depends of it. Experience the trip like you have no plans.</p>
+
+          <h4>What can you recommend for people travelling to Peru to try and capture? </h4>
+          <p>Try and capture the essence of what Peru is by getting off the beaten path to Machu Picchu and Cusco. Go and experience Peruvian markets, villages, mountains, lakes, rivers, beaches and focus on finding subjects that can't be found anywhere else in the world; and photograph it.</p>
 
 ########################################################
 ########################################################
@@ -27,23 +45,36 @@
     firstname: Robert
     surname: Ortiz
     class: robert-ortiz
-    introduction: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+    introduction: Known as a pioneer of Peruvian cuisine, Robert Ortiz has been bringing gastronomical refinement to the rich flavours of his homeland. Operating from his London base at the Michelin-star restaurant LIMA, Ortiz is a go-to for culinary insights regarding Peru.
     interview-sections:
       - images: after
         content: >
           <h4>Where did you grow up?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+          <p>In a small town called Lonya Grande in the Amazon region of Peru.</p>
 
-          <h4>How did you first get into photography?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+          <h4>What inspired you to become a chef?</h4>
+          <p>As a child I spent a lot of time with my grandparents in their coffee fields, and helping my parents in their bakery and small restaurant, so from an early age I was interested in the different flavours and possibilities of our local food.</p>
 
-      - images:
-        content: >
-          <h4>Where did you grow up?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+          <h4>Where did you train to cook?</h4>
+          <p>I first worked at the Costa Verde restaurant in Lima, then moved to London where I trained in a range of hotels and restaurants specialising in Spanish and Mediterranean food.</p>
 
-          <h4>How did you first get into photography?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+          <h4>What are your top five ingredients in Peruvian cooking?</h4>
+          <p>I love fresh limes, yellow chillies, red chillies called rocoto, seaweed and ginger.</p>
+
+          <h4>Do you have a signature dish or favourite dish you enjoy cooking?</h4>
+          <p>Yes; braised lamb with fermented corn beer, lots of Asian flavours and served with high altitude potatoes.</p>
+
+          <h4>Tell us about your favourite parts of Peru... </h4>
+          <p>The Amazon region, because of its diversity of plants, animals and waterways. </p>
+
+          <h4>Are there any great places that people may not know to go to – have you any top tips for hidden gems?</h4>
+          <p>There is a place called Chachapoyas in the north which is not visited by many people. There is so much culture there.</p>
+
+          <h4>Where do you eat when you visit Peru?</h4>
+          <p>The best places are corner places or warikes. The food is like at home – full of flavour, it's full of friendly people and very cheap.</p>
+
+          <h4>If you only had seven days in Peru where would you go?</h4>
+          <p>I would travel to the north of Peru, to the coast near Chiclayo. The food is great and it's only one hour by plane from Lima.</p>
 
 ########################################################
 ########################################################
@@ -52,23 +83,36 @@
     firstname: Rafael
     surname: Piqueras
     class: rafael-piqueras
-    introduction: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+    introduction: One of the most renowned chefs in Peru, Rafael Piqueras has a host of culinary acclaims under his belt. From training at Le Cordon Bleu, to experience in a range of European restaurants – including Guido in Italy and El Celler de Can Roca in Spain – Rafael is very much part of a new wave of high dining from his restaurant, Maras.
     interview-sections:
       - images: after
         content: >
           <h4>Where did you grow up?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+          <p>I was born and raised in Lima, Peru’s capital city.</p>
 
-          <h4>How did you first get into photography?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+          <h4>What inspired you to become a chef?</h4>
+          <p>In the home of my grandparents, it was the men that cooked. Cooking and eating were very important.</p>
 
-      - images:
-        content: >
-          <h4>Where did you grow up?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+          <h4>Where did you train to cook?</h4>
+          <p>I studied at Le Cordon Bleu Institute in Lima and then flew to Italy for my masters degree from the Italian Culinary Institute for Foreigners. Then I carried out various internships in Europe, in particular one at El Bulli restaurant under the direction of renowned chef Ferran Adriá, which was the most important to me. I also worked in at The Esguard (one Michelin-star) and El Celler de Can Roca (three Michelin-stars).</p>
 
-          <h4>How did you first get into photography?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+          <h4>What are your top five ingredients in Peruvian cooking?</h4>
+          <p>My top five are: Peruvian chillies (without them Peruvian food is almost impossible), our potatoes, our fish, quinoa and loche pumpkin.</p>
+
+          <h4>Do you have a signature dish or favourite dish you enjoy cooking?</h4>
+          <p>I always go back to basics. My favourite dish to cook is Peruvian ceviche. I like to experiment and try preparing it using different fish. Last time I used jurel, a fish nobody buys at the market, but I cured the fish with salt first and my ceviche turned out to be as good as any other I had prepared before.</p>
+
+          <h4>Tell us about your favourite parts of Peru…</h4>
+          <p>I love Arequipa, both the place and the food. I also like Cusco and the Sacred Valley, of course. But the Peruvian rainforest is my favourite place in because of its people, the number of flavours available and so many more things. I like to visit it all the time and it always surprises me with something.</p>
+
+          <h4>Are there any great places that people may not know to go to – have you any top tips for hidden gems?</h4>
+          <p>There are many traditional Peruvian food restaurants that people do not know. Otani, for example, is not in the regular culinary tour but it is worth the visit. And, in Arequipa, not many travellers are taken to traditional picanterias where traditional dishes are prepared.</p>
+
+          <h4>Where do you eat when you visit Peru?</h4>
+          <p>For a quick bite, I choose Isolina in Barranco district. </p>
+
+          <h4>If you only had 7 days in Peru where would you go?</h4>
+          <p>Definitely Cusco for at least a couple of days, then fly to the rainforest for three days. The rest of the time I would  choose from Arequipa, Trujillo or Chiclayo. I think if someone really wants to know and understand Peru, visiting our three regions is a must: the coast, the mountains and the rainforest.</p>
 
 ########################################################
 ########################################################
@@ -77,20 +121,37 @@
     firstname: Pedro
     surname: Sarabia
     class: pedro
-    introduction: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+    introduction: Pedro Sarabia is a veteran of the Surquillo food market in downtown Lima. It’s safe to say he’s a go-to guy for the best ingredients in the country, and a great bit of locals’ know-how.
     interview-sections:
-      - images: after
-        content: >
-          <h4>Where did you grow up?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-          <h4>How did you first get into photography?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
-
       - images:
         content: >
-          <h4>Where did you grow up?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+          <h4>How many years do you have in the fruit business?</h4>
+          <p>I have been in this business for more than 44 years</p>
 
-          <h4>How did you first get into photography?</h4>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+          <h4>How did you start working at the market?</h4>
+          <p>My family has been always dedicated to this kind of business, my dad began on this market and I used to work with him, when he passed away he left me in charge.</p>
+
+          <h4>What kind of fruits do you sell?</h4>
+          <p>Let me tell you, we sell fruits from the three regions of Peru, most of them are centralized here in Lima and then are distributed to every part of our country.</p>
+          <p>I have to go daily to the fruit wholesale market to get all of them, because there are some fruits which arrive from the coast, from the highlands, or the jungle, and not all of them arrive to the wholesale market on the same day.</p>
+
+          <h4>Is there any kind of fruit that you sell only in a specific time of the year?</h4>
+          <p>Yes, there are two fruits that grow here in Peru in May and June only, persimmon and dates. The rest of the fruits we sell can be found all year round, like grapes, cherimoya, and mangos.</p>
+
+          <h4>What is the most popular fruit on your stall amongst locals?</h4>
+          <p>The cherimoya is one of the customer´s favorite, but some that are sold everyday are the oranges, pineapples and papayas. </p>
+          <p>Fruits like cherimoya and avocados come from the highlands; grapes and mangos come from the coast, and fruits like papaya, pineapple and bananas come from the tropical jungle. People usually use those fruits to prepare juices or desserts, like pies.</p>
+
+          <h4>Do you have any advice for visitors that buy fruit in a Peruvian market?</h4>
+          <p>We always suggest to try fruits that they will not find easily in their countries, like melon pear, or this kind of unique unseeded avocado called finger avocado, or the three color cactus pear. Those are some fruits we recommend them to taste.</p>
+
+          <h4>Can you tell us which places in Peru are your favorites?</h4>
+          <p>Well I had the opportunity to visit Cusco and Machu Picchu and it was a truly great experience and an amazing place. I have also visited and liked Arequipa, Trujillo and Huaraz.</p>
+
+          <h4>What makes you feel proud about Peru?</h4>
+          <p>I have been impressed by how well the Royal Tombs of Sipan Museum, located in Chiclayo-Lambayeque, is curated; I had the opportunity to travel to some other cities in South America and the museum of Sipan is the best for me, and that makes me proud.</p>
+
+          <h4>Do you cook? What is your favorite dish?</h4>
+          <p>Yes, sometimes. Considering that I can eat fish every day, I love it. Preparing our ceviche is what I like the most.</p>
+
+
