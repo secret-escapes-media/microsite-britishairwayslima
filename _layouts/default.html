@@ -11,6 +11,9 @@
 
     <div class="page-content" style="background-image: url('{{site.baseurl}}/img/bg/bg-{{page.class}}.jpg');">
       {{ content }}
+      {% if page.class == 'overview' %}
+        <div class="bg-overlay"></div>
+      {% endif %}
     </div>
 
     {% include footer.html %}

@@ -29,7 +29,6 @@
     $('html').addClass('touch');
   }
 
-
 ///////////////////////////////////////
 //        Navigation
 ///////////////////////////////////////
@@ -121,6 +120,23 @@
   closeModal(modalClose);
   // closeModal(modal);
 
+
+  ///////////////////////////////////////
+  //      Background fadeOut
+  ///////////////////////////////////////
+
+  function bgOverlay(){
+  	var st = $(document).scrollTop();
+  	var wh = $(window).height();
+
+  	$('.bg-overlay').css({
+  		"opacity": ((wh - (st*2)) / wh)
+  	});
+  }
+
+  $(document).scroll(function() {
+  	bgOverlay();
+  });
 
 ///////////////////////////////////////////////////////////////////////////////
 });})(jQuery, this); // on ready end

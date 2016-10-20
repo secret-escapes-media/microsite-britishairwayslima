@@ -232,6 +232,21 @@ body { background-color: $black; }
 // Set of three images with hover zoom
 
 .img-block {
+  .img-caption {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    text-align: right;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.65em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px black;
+    transform: scale(1,1) !important;
+  }
   @media (min-width: 650px) {
     max-width: 100%;
     margin-left: auto;
@@ -302,10 +317,11 @@ body { background-color: $black; }
     color: white;
     position: relative;
     padding: 2em 3.375em;
-    background: url(../img/bg/bg-mobile-ba-promo.jpg) 80% 50% no-repeat #000;
+    background-position: center bottom;
+    background-size: cover;
+    background-color: #000;
     @include bp (large){
       background-image: url(../img/bg/bg-ba-promo.jpg);
-      background-position: 142px 58%;
       text-align: left;
     }
     @include bp (xlarge){
@@ -314,22 +330,16 @@ body { background-color: $black; }
     h3 { text-align: left; color: #ffffff; }
   }
   .column {
-    max-width: 500px;
+  @include bp (large){
+      max-width: 50%;
+    }
   }
-  .logos {
-    padding-top: 1.5em;
-    @include bp (large){
-      position: absolute;
-      right: 3.375em;
-      bottom: 0;
-    }
-    img {
-      display: inline-block;
-      margin-top: 1em;
-      margin-bottom: 2em;
-      max-width: 150px;
-      margin-left: 1.728em;
-    }
+  .logo {
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    max-width: 150px;
+    margin-left: 1.728em;
   }
 }
 
@@ -345,3 +355,10 @@ body { background-color: $black; }
     font-size: 1.2em;
   }
 }
+
+
+.bg-overlay {
+  position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 0;
+  background-color: rgba(0,0,0,0.65); }
+
+.page-content section { position: relative; z-index: 1; }
