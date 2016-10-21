@@ -122,7 +122,7 @@
     firstname: Jacob
     surname: Moon
     class: jacob-moon
-    introduction: Jacob Moon has a habit of reaching the most precarious spots in the world and then shooting the most incredible photos we’ve ever seen! More at home up a mountain than in a hotel, Jacob is an avid rock and ice climber, and passionate mountaineer, offering us awe-inspiring images of the most far-flung, and daring places in the world.
+    introduction: Jacob Moon has a habit of reaching the most precarious spots in the world and then shooting the most incredible photos we’ve ever seen! More at home up a mountain than in a hotel, Jacob is an avid rock and ice climber, and passionate mountaineer, offering us awe-inspiring images of the most far-flung, and daring places in the world. We let him muse on his art, and his favourite restaurant in Lima.
     interview-sections:
       - images: after
         content: >
@@ -147,6 +147,9 @@
 
       - images:
         content: >
+
+          <h4>If you’re in the capital, Lima, what would you do?</h4>
+          <p>One thing I always look forward to doing in Lima is going to "La Mar", a cebicheria restaurant. The Restaurant sells seafood but does particularly good ceviche that is just out of this world. It is far and away the best part of Lima. I hear there are other great places to eat but this one is so good I really haven’t gone anywhere else as I’m usually travelling around so frequently.</p>
 
           <h4>Did you ever get a chance to check out the nightlife in Peru?</h4>
           <p>The only nights that I went out were in the mountains to see the star-lit skies above my tent. The stars in the mountains of Peru are overwhelmingly beautiful. Without any major cities anywhere near the mountains to give off light pollution, plus the generally high elevations at which I camped, the brightness of the stars are the best I’ve ever seen.</p>
