@@ -124,7 +124,7 @@
     class: jacob-moon
     introduction: Jacob Moon has a habit of reaching the most precarious spots in the world and then shooting the most incredible photos we’ve ever seen! More at home up a mountain than in a hotel, Jacob is an avid rock and ice climber, and passionate mountaineer, offering us awe-inspiring images of the most far-flung, and daring places in the world. We let him muse on his art, and his favourite restaurant in Lima.
     interview-sections:
-      - images: after
+      - images:
         content: >
           <h4>How did you first get into Photography?</h4>
           <p>The first time I ever set out to climb a mountain, I took my dad’s camera with me to document the climb. Since then I have been taking a camera with me every time I go out into the mountains to document the experience. Then 2 years ago the app Instagram came along which taught and inspired me to refine my photography. </p>
@@ -136,9 +136,6 @@
 
       - images: after
         content: >
-          <h4>What are some of your favorite landscapes to photograph? </h4>
-          <p>I particularly love photographing mountain ridges at sunrise or sunset, while on the ridge itself. Watching the mountain ridge beneath my feet take on that alpine glow, and the mountains in the distance slowly turn pink, and then losing the light as it fades across the sky, makes for a truly special time to capture shots. </p>
-
           <h4>What are the best methods to travel around Peru?</h4>
           <p>Travelling around Peru is very simple and doesn't require any real planning prior to visiting. Peru has a widespread taxi and bus system that will take you practically anywhere you’d like to go at a very affordable price. The only thing that would need to be considered is your susceptibility to motion sickness. The mountainous areas of Peru, such as the area around Cusco, have high mountain pass roads with hundreds of switchbacks (hairpins) running up and down them, which may cause some to get very motion sick. </p>
 
