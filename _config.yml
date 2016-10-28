@@ -3,7 +3,7 @@ title: Peru
 description: >
   From the remnants of ancient civilisations to Indiana Jones-style exploits in the rainforest, Peru catapults visitors into the spirit of adventure.
 baseurl: "/britishairwayslima" # the subpath of your site, e.g. /blog/
-url: "http://m-stg.secretescapes.com" # the base hostname & protocol for your site
+url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
